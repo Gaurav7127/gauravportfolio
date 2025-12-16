@@ -18,7 +18,7 @@ const ProfileView: React.FC = () => {
                 <div className="w-64 h-80 bg-slate-200 overflow-hidden border border-slate-300 relative group">
                      {/* NOTE: Ensure 'gaurav_profile.jpg' is placed in your public folder or accessible path */}
                      <img 
-                       src="gaurav_profile.jpg" 
+                       src="profilepic.png" 
                        onError={(e) => {
                            // Fallback if image not found
                            (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop";

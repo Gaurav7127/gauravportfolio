@@ -8,7 +8,7 @@ export const PERSONAL_INFO: PersonalInfo = {
   phone: "+91 8530042162",
   bio: "Passionate Full Stack and AI Engineer specializing in building robust digital solutions. With a strong foundation in Artificial Intelligence and modern web technologies, I transform complex requirements into precise technical executables. Proficient in Python, React, and Machine Learning pipelines.",
   resume: "/Gaurav_Resume.pdf", 
-  profileImage: "/profile.jpg",
+  profileImage: "/profilepic.png",
   socials: {
       linkedin: "https://www.linkedin.com/in/gauravsingh175",
       github: "https://github.com/Gaurav7127",

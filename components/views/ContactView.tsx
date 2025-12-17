@@ -1,6 +1,6 @@
 import React from 'react';
 import { PERSONAL_INFO } from '../../constants';
-import { Mail, Phone, MapPin, Linkedin, ExternalLink, Download } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Github, ExternalLink, Download } from 'lucide-react';
 
 const ContactView: React.FC = () => {
   return (
@@ -78,13 +78,13 @@ const ContactView: React.FC = () => {
                                 LinkedIn Profile
                              </a>
                              <a 
-                               href={`https://${PERSONAL_INFO.socials.portfolio}`} 
+                               href={`https://${PERSONAL_INFO.socials.github}`} 
                                target="_blank"
                                rel="noopener noreferrer"
-                               className="flex items-center justify-center py-3 bg-slate-800 text-white text-sm font-bold uppercase hover:bg-slate-700 transition-colors shadow-sm"
+                               className="flex items-center justify-center py-3 bg-[#24292e] text-white text-sm font-bold uppercase hover:bg-slate-800 transition-colors shadow-sm"
                              >
-                                <ExternalLink className="w-4 h-4 mr-2" />
-                                Visit Portfolio
+                                <Github className="w-4 h-4 mr-2" />
+                                GitHub Profile
                              </a>
                         </div>
                         

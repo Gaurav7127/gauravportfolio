@@ -10,7 +10,7 @@ export const PERSONAL_INFO: PersonalInfo = {
   resume: "/Gaurav_Resume.pdf", 
   socials: {
       linkedin: "https://www.linkedin.com/in/gauravsingh175",
-      github: "https://github.com/Gaurav7127",
+      github: "github.com/Gaurav7127",
       portfolio: "singhgaurav-portfolio.netlify.app"
   }
 };

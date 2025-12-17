@@ -7,7 +7,7 @@ export const PERSONAL_INFO: PersonalInfo = {
   email: "gauravsingh1752005@gmail.com",
   phone: "+91 8530042162",
   bio: "Passionate Full Stack and AI Engineer specializing in building robust digital solutions. With a strong foundation in Artificial Intelligence and modern web technologies, I transform complex requirements into precise technical executables. Proficient in Python, React, and Machine Learning pipelines.",
-  resume: "/resume.pdf", // REPLACE THIS with your actual file path or URL
+  resume: "/resume.pdf", 
   socials: {
       linkedin: "linkedin.com/in/gauravsingh175",
       github: "github.com/gauravsingh",
@@ -32,7 +32,7 @@ export const SKILLS: Skill[] = [
   
   // Tools
   { name: "GitHub", iconClass: "devicon-github-original", level: 90, category: "Tools" },
-  { name: "Power BI", iconClass: "devicon-microsoftsqlserver-plain", level: 85, category: "Tools" }, // Using generic MS or SQL icon if specific PowerBI icon missing in some sets, but trying standard class
+  { name: "Power BI", iconClass: "devicon-microsoftsqlserver-plain", level: 85, category: "Tools" },
   
   // Soft Skills (No Icons)
   { name: "Problem Solving", iconClass: "devicon-vscode-plain", level: 100, category: "Soft Skills" },
@@ -67,40 +67,127 @@ export const EDUCATION: EducationItem[] = [
 ];
 
 export const CERTIFICATIONS: CertificationItem[] = [
+  // Top Tier: AI & ML
   { 
       id: "CRT-01", 
-      title: "AWS Advanced Networking – Speciality", 
-      issuer: "Udemy", 
-      year: "2025",
-      link: "https://www.udemy.com/" // Replace with actual certificate link
-  },
-  { 
-      id: "CRT-02", 
-      title: "User Experience Design Essentials", 
-      issuer: "Udemy (Adobe XD)", 
-      year: "2025",
-      link: "https://www.udemy.com/" 
-  },
-  { 
-      id: "CRT-03", 
-      title: "Cyber Job Simulation", 
-      issuer: "Deloitte & The Forage", 
-      year: "2025",
-      link: "https://www.theforage.com/" 
-  },
-  { 
-      id: "CRT-04", 
-      title: "Data Visualisation", 
-      issuer: "TATA & The Forage", 
-      year: "2025",
-      link: "https://www.theforage.com/" 
-  },
-  { 
-      id: "CRT-05", 
       title: "OCI 2025 Certified Generative AI Professional", 
       issuer: "Oracle", 
       year: "2025",
-      link: "https://education.oracle.com/" 
+      link: "https://education.oracle.com/",
+      logo: "https://www.google.com/s2/favicons?domain=oracle.com&sz=128",
+      category: "🏆 Top Tier: AI & Machine Learning"
+  },
+  { 
+      id: "CRT-02", 
+      title: "MLOps with Vertex AI: Manage Features", 
+      issuer: "Google Cloud", 
+      year: "2024",
+      link: "https://www.cloudskillsboost.google/",
+      logo: "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=128",
+      category: "🏆 Top Tier: AI & Machine Learning"
+  },
+  { 
+      id: "CRT-03", 
+      title: "AI/ML Track - Gen AI Academy 2.0", 
+      issuer: "Google Cloud", 
+      year: "2024",
+      link: "https://www.cloudskillsboost.google/",
+      logo: "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=128",
+      category: "🏆 Top Tier: AI & Machine Learning"
+  },
+  { 
+      id: "CRT-04", 
+      title: "Prepare Data for ML APIs on Google Cloud", 
+      issuer: "Google Cloud", 
+      year: "2024",
+      link: "https://www.cloudskillsboost.google/",
+      logo: "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=128",
+      category: "🏆 Top Tier: AI & Machine Learning"
+  },
+  // Core Technical
+  { 
+      id: "CRT-05", 
+      title: "AWS Certified Advanced Networking - Specialty", 
+      issuer: "Udemy", 
+      year: "2025",
+      link: "https://www.udemy.com/",
+      logo: "https://www.google.com/s2/favicons?domain=udemy.com&sz=128",
+      category: "☁️ Core Technical: Cloud & Networking"
+  },
+  { 
+      id: "CRT-06", 
+      title: "Introduction to Data Science", 
+      issuer: "Cisco", 
+      year: "2024",
+      link: "https://www.netacad.com/",
+      logo: "https://www.google.com/s2/favicons?domain=cisco.com&sz=128",
+      category: "☁️ Core Technical: Cloud & Networking"
+  },
+  { 
+      id: "CRT-07", 
+      title: "Cyber Job Simulation", 
+      issuer: "Deloitte", 
+      year: "2025",
+      link: "https://www.theforage.com/",
+      logo: "https://www.google.com/s2/favicons?domain=deloitte.com&sz=128",
+      category: "☁️ Core Technical: Cloud & Networking"
+  },
+  // Design & Visualization
+  { 
+      id: "CRT-08", 
+      title: "Essentials User Experience Design Adobe XD", 
+      issuer: "Udemy", 
+      year: "2025",
+      link: "https://www.udemy.com/",
+      logo: "https://www.google.com/s2/favicons?domain=udemy.com&sz=128",
+      category: "🎨 Design & Visualisation"
+  },
+  { 
+      id: "CRT-09", 
+      title: "Data Visualisation", 
+      issuer: "TATA", 
+      year: "2025",
+      link: "https://www.theforage.com/",
+      logo: "https://www.google.com/s2/favicons?domain=tata.com&sz=128",
+      category: "🎨 Design & Visualisation"
+  },
+  // AI Literacy
+  { 
+      id: "CRT-12", 
+      title: "Gemini Certified Student (K-12) - Foundational AI Ethics & Prompting", 
+      issuer: "Google", 
+      year: "2025",
+      link: "https://aistudents.google/",
+      logo: "https://www.google.com/s2/favicons?domain=google.com&sz=128",
+      category: "📚 AI Literacy & Ethics Foundations"
+  },
+  { 
+      id: "CRT-13", 
+      title: "Gemini Certified University Student - Advanced Academic Problem Solving & Research Integration", 
+      issuer: "Google", 
+      year: "2025",
+      link: "https://aistudents.google/",
+      logo: "https://www.google.com/s2/favicons?domain=google.com&sz=128",
+      category: "📚 AI Literacy & Ethics Foundations"
+  },
+  // Foundational
+  { 
+      id: "CRT-10", 
+      title: "What Is Generative AI?", 
+      issuer: "LinkedIn Learning", 
+      year: "2024",
+      link: "https://www.linkedin.com/learning/",
+      logo: "https://www.google.com/s2/favicons?domain=linkedin.com&sz=128",
+      category: "🎓 Foundational & Emerging Tech"
+  },
+  { 
+      id: "CRT-11", 
+      title: "Automate Data Capture with Document AI", 
+      issuer: "Google Cloud", 
+      year: "2024",
+      link: "https://www.cloudskillsboost.google/",
+      logo: "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=128",
+      category: "🎓 Foundational & Emerging Tech"
   }
 ];
 

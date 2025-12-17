@@ -3,6 +3,7 @@ export enum ViewState {
     SKILLS = 'SKILLS',
     PROJECTS = 'PROJECTS',
     EDUCATION = 'EDUCATION',
+    CERTIFICATIONS = 'CERTIFICATIONS',
     CONTACT = 'CONTACT'
   }
   
@@ -36,7 +37,9 @@ export enum ViewState {
     title: string;
     issuer: string;
     year: string;
-    link?: string; // URL to the certificate credential
+    link?: string;
+    logo?: string; 
+    category: string; // Added category field
   }
   
   export interface Skill {
@@ -53,7 +56,7 @@ export enum ViewState {
     email: string;
     phone: string;
     bio: string;
-    resume: string; // Added resume field
+    resume: string;
     socials: {
         linkedin: string;
         github: string;

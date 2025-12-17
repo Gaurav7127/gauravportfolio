@@ -14,8 +14,9 @@ const Navigation: React.FC<NavigationProps> = ({ currentView, onViewChange }) =>
     { id: ViewState.PROFILE, label: 'ABOUT ME' },
     { id: ViewState.SKILLS, label: 'SKILLS' },
     { id: ViewState.PROJECTS, label: 'PROJECTS' },
-    { id: ViewState.EDUCATION, label: 'EDUCATION & CERTS' },
-    { id: ViewState.CONTACT, label: 'CONTACT INFO' },
+    { id: ViewState.EDUCATION, label: 'EDUCATION' },
+    { id: ViewState.CERTIFICATIONS, label: 'CERTIFICATIONS' },
+    { id: ViewState.CONTACT, label: 'CONTACT' },
   ];
 
   const handleMobileNav = (id: ViewState) => {
@@ -35,7 +36,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentView, onViewChange }) =>
               key={tab.id}
               onClick={() => onViewChange(tab.id)}
               className={`
-                relative px-6 py-3 min-w-[140px] text-sm font-bold uppercase tracking-wider border-t-2 border-l-2 border-r-2 transition-all
+                relative px-6 py-3 min-w-[120px] text-sm font-bold uppercase tracking-wider border-t-2 border-l-2 border-r-2 transition-all whitespace-nowrap
                 ${isActive 
                   ? 'bg-white border-slate-800 text-blue-700 translate-y-[2px] z-10' 
                   : 'bg-[#e5e5e0] border-slate-400 text-slate-500 hover:bg-[#dcdcd9] hover:text-slate-700'}
@@ -59,7 +60,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentView, onViewChange }) =>
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-[#fdfbf7] border-b-2 border-slate-800 shadow-xl p-4 flex flex-col gap-2">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-[#fdfbf7] border-b-2 border-slate-800 shadow-xl p-4 flex flex-col gap-2 z-50">
            {tabs.map((tab) => (
              <button
                key={tab.id}

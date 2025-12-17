@@ -7,6 +7,7 @@ import SkillsView from './components/views/SkillsView';
 import ProjectsView from './components/views/ProjectsView';
 import EducationView from './components/views/EducationView';
 import ContactView from './components/views/ContactView';
+import CertificationsView from './components/views/CertificationsView';
 import { ViewState } from './types';
 
 const App: React.FC = () => {
@@ -20,6 +21,8 @@ const App: React.FC = () => {
         return <SkillsView />;
       case ViewState.EDUCATION:
         return <EducationView />;
+      case ViewState.CERTIFICATIONS:
+        return <CertificationsView />;
       case ViewState.PROJECTS:
         return <ProjectsView />;
       case ViewState.CONTACT:

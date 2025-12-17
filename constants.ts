@@ -59,9 +59,9 @@ export const EDUCATION: EducationItem[] = [
   {
     id: "EDU-01",
     degree: "Secondary School (Class X)",
-    institution: "Bharat English Medium School",
+    institution: "Mount Carmel Convent School",
     year: "2021",
-    score: "87%",
+    score: "Pass",
     details: "Foundation"
   }
 ];
@@ -73,7 +73,7 @@ export const CERTIFICATIONS: CertificationItem[] = [
       title: "OCI 2025 Certified Generative AI Professional", 
       issuer: "Oracle", 
       year: "2025",
-      link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=CCBAE4C5DF0B54FD37A20CBCE87E5DDB7E28BC2940BE2C49442960F9B5329A75",
+      link: "https://education.oracle.com/",
       logo: "https://www.google.com/s2/favicons?domain=oracle.com&sz=128",
       category: "🏆 Top Tier: AI & Machine Learning"
   },
@@ -81,8 +81,8 @@ export const CERTIFICATIONS: CertificationItem[] = [
       id: "CRT-02", 
       title: "MLOps with Vertex AI: Manage Features", 
       issuer: "Google Cloud", 
-      year: "2025",
-      link: "https://www.skills.google/public_profiles/156d6d47-43de-4ebc-ab20-3c1539b2a9e8/badges/20688445?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share",
+      year: "2024",
+      link: "https://www.cloudskillsboost.google/",
       logo: "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=128",
       category: "🏆 Top Tier: AI & Machine Learning"
   },
@@ -90,8 +90,8 @@ export const CERTIFICATIONS: CertificationItem[] = [
       id: "CRT-03", 
       title: "AI/ML Track - Gen AI Academy 2.0", 
       issuer: "Google Cloud", 
-      year: "2025",
-      link: "https://certificate.hack2skill.com/user/genai2aiml/2025H2S10GENAI-AIML00216",
+      year: "2024",
+      link: "https://www.cloudskillsboost.google/",
       logo: "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=128",
       category: "🏆 Top Tier: AI & Machine Learning"
   },
@@ -99,8 +99,8 @@ export const CERTIFICATIONS: CertificationItem[] = [
       id: "CRT-04", 
       title: "Prepare Data for ML APIs on Google Cloud", 
       issuer: "Google Cloud", 
-      year: "2025",
-      link: "https://www.credly.com/badges/06d7923c-9458-46d0-8e7e-813ad5543e50/linked_in_profile",
+      year: "2024",
+      link: "https://www.cloudskillsboost.google/",
       logo: "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=128",
       category: "🏆 Top Tier: AI & Machine Learning"
   },
@@ -110,7 +110,7 @@ export const CERTIFICATIONS: CertificationItem[] = [
       title: "AWS Certified Advanced Networking - Specialty", 
       issuer: "Udemy", 
       year: "2025",
-      link: "https://www.udemy.com/certificate/UC-1c0cb649-8469-490a-b05f-5397169bc870/",
+      link: "https://www.udemy.com/",
       logo: "https://www.google.com/s2/favicons?domain=udemy.com&sz=128",
       category: "☁️ Core Technical: Cloud & Networking"
   },
@@ -118,8 +118,8 @@ export const CERTIFICATIONS: CertificationItem[] = [
       id: "CRT-06", 
       title: "Introduction to Data Science", 
       issuer: "Cisco", 
-      year: "2025",
-      link: "https://www.credly.com/badges/06dd21b2-daea-4b83-ba0d-3f2e254cf671/linked_in_profile",
+      year: "2024",
+      link: "https://www.netacad.com/",
       logo: "https://www.google.com/s2/favicons?domain=cisco.com&sz=128",
       category: "☁️ Core Technical: Cloud & Networking"
   },
@@ -128,7 +128,7 @@ export const CERTIFICATIONS: CertificationItem[] = [
       title: "Cyber Job Simulation", 
       issuer: "Deloitte", 
       year: "2025",
-      link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_xPPh5pQqsLuQyJo99_1753629219210_completion_certificate.pdf",
+      link: "https://www.theforage.com/",
       logo: "https://www.google.com/s2/favicons?domain=deloitte.com&sz=128",
       category: "☁️ Core Technical: Cloud & Networking"
   },
@@ -138,7 +138,7 @@ export const CERTIFICATIONS: CertificationItem[] = [
       title: "Essentials User Experience Design Adobe XD", 
       issuer: "Udemy", 
       year: "2025",
-      link: "https://www.udemy.com/certificate/UC-2b9f104a-eb09-4782-b848-4dbbe9596557/",
+      link: "https://www.udemy.com/",
       logo: "https://www.google.com/s2/favicons?domain=udemy.com&sz=128",
       category: "🎨 Design & Visualisation"
   },
@@ -147,7 +147,7 @@ export const CERTIFICATIONS: CertificationItem[] = [
       title: "Data Visualisation", 
       issuer: "TATA", 
       year: "2025",
-      link: "https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/MyXvBcppsW2FkNYCX_ifobHAoMjQs9s6bKS_xPPh5pQqsLuQyJo99_1754307493764_completion_certificate.pdf",
+      link: "https://www.theforage.com/",
       logo: "https://www.google.com/s2/favicons?domain=tata.com&sz=128",
       category: "🎨 Design & Visualisation"
   },
@@ -157,7 +157,7 @@ export const CERTIFICATIONS: CertificationItem[] = [
       title: "Gemini Certified Student (K-12) - Foundational AI Ethics & Prompting", 
       issuer: "Google", 
       year: "2025",
-      link: "https://edu.exceedlms.com/student/award/GYBCzjDD3dNvaSWeoUUBEbGF",
+      link: "https://aistudents.google/",
       logo: "https://www.google.com/s2/favicons?domain=google.com&sz=128",
       category: "📚 AI Literacy & Ethics Foundations"
   },
@@ -166,7 +166,7 @@ export const CERTIFICATIONS: CertificationItem[] = [
       title: "Gemini Certified University Student - Advanced Academic Problem Solving & Research Integration", 
       issuer: "Google", 
       year: "2025",
-      link: "https://edu.google.accredible.com/6c4d4988-d5dc-45af-9cce-d9714853b368#acc.Zo9Ou2jm",
+      link: "https://aistudents.google/",
       logo: "https://www.google.com/s2/favicons?domain=google.com&sz=128",
       category: "📚 AI Literacy & Ethics Foundations"
   },
@@ -175,8 +175,8 @@ export const CERTIFICATIONS: CertificationItem[] = [
       id: "CRT-10", 
       title: "What Is Generative AI?", 
       issuer: "LinkedIn Learning", 
-      year: "2025",
-      link: "https://www.linkedin.com/learning/certificates/3ade19a67f8e1111b718216fb18ff31902e0b173ee223c3a606a414343450861?trk=share_certificate",
+      year: "2024",
+      link: "https://www.linkedin.com/learning/",
       logo: "https://www.google.com/s2/favicons?domain=linkedin.com&sz=128",
       category: "🎓 Foundational & Emerging Tech"
   },
@@ -184,13 +184,12 @@ export const CERTIFICATIONS: CertificationItem[] = [
       id: "CRT-11", 
       title: "Automate Data Capture with Document AI", 
       issuer: "Google Cloud", 
-      year: "2025",
-      link: "https://www.credly.com/badges/4b938aee-86c6-4fc9-80ad-f756aa699875/linked_in_profile",
+      year: "2024",
+      link: "https://www.cloudskillsboost.google/",
       logo: "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=128",
       category: "🎓 Foundational & Emerging Tech"
   }
 ];
-
 
 export const PROJECTS: Project[] = [
   {

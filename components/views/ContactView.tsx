@@ -83,9 +83,10 @@ const ContactView: React.FC = () => {
                                rel="noopener noreferrer"
                                className="flex items-center justify-center py-3 bg-[#24292e] text-white text-sm font-bold uppercase hover:bg-slate-800 transition-colors shadow-sm"
                              >
-                                <Github className="w-4 h-4 mr-2" />
+                                   <Github className="w-4 h-4 mr-2" />
                                 GitHub Profile
                              </a>
+                        </div>
                         </div>
                         
                         <a 

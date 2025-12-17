@@ -243,14 +243,4 @@ export const PROJECTS: Project[] = [
     }
   }
 ];
-
-export const EXPERIENCE: ExperienceItem[] = [
-    {
-        id: "EXP-01",
-        title: "Full Stack Engineer Intern",
-        date: "2024 - Present",
-        organization: "Tech Corp",
-        type: "Internship",
-        description: "Contributed to frontend development using React and backend services in Python."
-    }
-];
+=

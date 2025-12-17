@@ -1,6 +1,6 @@
 import React from 'react';
 import { PERSONAL_INFO } from '../../constants';
-import { Download } from 'lucide-react';
+import { Download, Mail } from 'lucide-react';
 
 const ProfileView: React.FC = () => {
   return (
@@ -16,9 +16,8 @@ const ProfileView: React.FC = () => {
                 
                 {/* Image Placeholder */}
                 <div className="w-64 h-80 bg-slate-200 overflow-hidden border border-slate-300 relative group">
-                     {/* NOTE: Ensure 'gaurav_profile.jpg' is placed in your public folder or accessible path */}
                      <img 
-                       src="profilepic.png" 
+                       src={PERSONAL_INFO.profileImage}
                        onError={(e) => {
                            // Fallback if image not found
                            (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop";
@@ -48,15 +47,22 @@ const ProfileView: React.FC = () => {
                     {PERSONAL_INFO.bio}
                 </p>
 
-                <div className="flex gap-4">
+                <div className="flex flex-col sm:flex-row gap-4">
                      <a 
                         href={PERSONAL_INFO.resume}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center px-6 py-3 bg-blue-600 text-white text-sm font-bold uppercase hover:bg-blue-700 transition-colors shadow-[4px_4px_0px_0px_rgba(30,41,59,1)] active:translate-y-1 active:shadow-none"
+                        className="flex items-center justify-center px-6 py-3 bg-blue-600 text-white text-sm font-bold uppercase hover:bg-blue-700 transition-colors shadow-[4px_4px_0px_0px_rgba(30,41,59,1)] active:translate-y-1 active:shadow-none"
                      >
                          <Download className="w-4 h-4 mr-2" />
                          Resume
+                     </a>
+                     <a 
+                        href={`mailto:${PERSONAL_INFO.email}`}
+                        className="flex items-center justify-center px-6 py-3 bg-white text-slate-800 border-2 border-slate-800 text-sm font-bold uppercase hover:bg-slate-800 hover:text-white transition-colors shadow-[4px_4px_0px_0px_rgba(30,41,59,1)] active:translate-y-1 active:shadow-none"
+                     >
+                         <Mail className="w-4 h-4 mr-2" />
+                         Email Me
                      </a>
                 </div>
             </div>

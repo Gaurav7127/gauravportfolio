@@ -8,7 +8,7 @@ export const PERSONAL_INFO: PersonalInfo = {
   phone: "+91 8530042162",
   bio: "Passionate Full Stack and AI Engineer specializing in building robust digital solutions. With a strong foundation in Artificial Intelligence and modern web technologies, I transform complex requirements into precise technical executables. Proficient in Python, React, and Machine Learning pipelines.",
   resume: "/Gaurav_Resume.pdf", 
-  profileImage: "/profilepic.png",
+  profileImage: "/profile.jpg",
   socials: {
       linkedin: "https://www.linkedin.com/in/gauravsingh175",
       github: "https://github.com/Gaurav7127",
@@ -243,4 +243,15 @@ export const PROJECTS: Project[] = [
         ]
     }
   }
+];
+
+export const EXPERIENCE: ExperienceItem[] = [
+    {
+        id: "EXP-01",
+        title: "Full Stack Engineer Intern",
+        date: "2024 - Present",
+        organization: "Tech Corp",
+        type: "Internship",
+        description: "Contributed to frontend development using React and backend services in Python."
+    }
 ];

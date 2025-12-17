@@ -37,7 +37,7 @@ const ContactView: React.FC = () => {
 
                     <div className="space-y-6">
                         {/* Contact Item */}
-                        <a href={`mailto:${PERSONAL_INFO.email}`} className="flex items-center group p-3 border border-transparent hover:border-slate-300 hover:bg-slate-50 transition-all">
+                        <a href={`mailto:${PERSONAL_INFO.email}`} className="flex items-center group p-3 border border-transparent hover:border-slate-300 hover:bg-slate-50 transition-all cursor-pointer">
                             <div className="w-10 h-10 bg-slate-100 border border-slate-300 flex items-center justify-center mr-4 group-hover:bg-blue-100 group-hover:border-blue-300 group-hover:text-blue-600 transition-colors">
                                 <Mail className="w-5 h-5 text-slate-600" />
                             </div>
@@ -69,7 +69,7 @@ const ContactView: React.FC = () => {
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 pt-6 border-t border-slate-200">
                              <a 
-                               href={`https://${PERSONAL_INFO.socials.linkedin}`}
+                               href={PERSONAL_INFO.socials.linkedin}
                                target="_blank"
                                rel="noopener noreferrer" 
                                className="flex items-center justify-center py-3 bg-[#0077b5] text-white text-sm font-bold uppercase hover:opacity-90 transition-opacity shadow-sm"
@@ -78,15 +78,14 @@ const ContactView: React.FC = () => {
                                 LinkedIn Profile
                              </a>
                              <a 
-                               href={`https://${PERSONAL_INFO.socials.github}`} 
+                               href={PERSONAL_INFO.socials.github} 
                                target="_blank"
                                rel="noopener noreferrer"
                                className="flex items-center justify-center py-3 bg-[#24292e] text-white text-sm font-bold uppercase hover:bg-slate-800 transition-colors shadow-sm"
                              >
-                                   <Github className="w-4 h-4 mr-2" />
+                                <Github className="w-4 h-4 mr-2" />
                                 GitHub Profile
                              </a>
-                        </div>
                         </div>
                         
                         <a 

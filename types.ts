@@ -57,6 +57,7 @@ export enum ViewState {
     phone: string;
     bio: string;
     resume: string;
+    profileImage: string;
     socials: {
         linkedin: string;
         github: string;

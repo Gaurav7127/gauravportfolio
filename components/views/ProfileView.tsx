@@ -23,7 +23,7 @@ const ProfileView: React.FC = () => {
                            (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop";
                        }}
                        alt="Gaurav Singh" 
-                       className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                       className="w-full h-full object-cover transition-all duration-500"
                      />
                      <div className="absolute bottom-0 left-0 right-0 bg-slate-900/80 text-white text-[10px] text-center py-1 font-mono uppercase">
                         ID: GS-2005

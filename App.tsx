@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import BlueprintWrapper from './components/BlueprintWrapper';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
@@ -12,6 +12,12 @@ import { ViewState } from './types';
 
 const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<ViewState>(ViewState.PROFILE);
+  const [theme, setTheme] = useState<string>('blue');
+
+  // Apply theme to body for global CSS variables
+  useEffect(() => {
+    document.body.setAttribute('data-theme', theme);
+  }, [theme]);
 
   const renderContent = () => {
     switch (currentView) {
@@ -35,15 +41,14 @@ const App: React.FC = () => {
   return (
     <BlueprintWrapper>
       <div className="flex flex-col w-full h-full bg-[#fdfbf7] relative">
-        {/* Top Header Block */}
-        <Header />
+        {/* Top Header Block with Theme Switcher */}
+        <Header theme={theme} onThemeChange={setTheme} />
         
         {/* Navigation Tabs (Responsive) */}
         <Navigation currentView={currentView} onViewChange={setCurrentView} />
         
         {/* Main Content Viewport */}
         <main className="flex-1 overflow-hidden relative">
-          {/* Content Container */}
           <div className="h-full w-full overflow-y-auto">
              {renderContent()}
           </div>

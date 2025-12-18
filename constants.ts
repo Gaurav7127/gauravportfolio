@@ -2,7 +2,7 @@ import { Project, EducationItem, CertificationItem, Skill, PersonalInfo, Experie
 
 export const PERSONAL_INFO: PersonalInfo = {
   name: "GAURAV SINGH",
-  role: "FULL STACK ENGINEER",
+  role: "FULL STACK & AI ARCHITECT",
   location: "Satara, Maharashtra",
   email: "gauravsingh1752005@gmail.com",
   phone: "+91 8530042162",

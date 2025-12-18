@@ -43,9 +43,13 @@ const Header: React.FC<HeaderProps> = ({ theme = 'blue', onThemeChange }) => {
       <div className="relative z-10 mt-4 md:mt-0 flex flex-wrap gap-4 items-center">
          {/* Theme Switcher */}
          <div className="flex flex-col items-end mr-2">
-            <div className="text-[9px] font-bold text-slate-500 uppercase mb-1 flex items-center">
-                <Palette className="w-3 h-3 mr-1" /> INK SELECTOR
-            </div>
+    {/* Label Box */}
+    <div className="bg-white border border-slate-800 px-2 py-0.5 mb-1 flex items-center shadow-[2px_2px_0px_0px_rgba(30,41,59,0.1)]">
+        <Palette className="w-3 h-3 mr-1 text-slate-800" />
+        <span className="text-[9px] font-black text-slate-800 uppercase tracking-tighter">
+            INK SELECTOR
+        </span>
+    </div>
             <div className="flex gap-1 border-2 border-slate-800 p-1 bg-white">
                 {themeOptions.map((opt) => (
                     <button

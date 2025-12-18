@@ -53,7 +53,7 @@ export const EDUCATION: EducationItem[] = [
     id: "EDU-02",
     degree: "Higher Secondary (Class XII)",
     institution: "YCIS, Satara",
-    year: "2021 - 2023",
+    year: "2023",
     score: "64.67%",
     details: "Science Stream"
   },

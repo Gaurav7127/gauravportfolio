@@ -52,7 +52,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentView, onViewChange }) =>
 
       {/* Mobile Navigation Header */}
       <div className="md:hidden flex justify-between items-center p-4 bg-[#e5e5e0]">
-        <span className="text-sm font-bold text-slate-500 uppercase">MENU</span>
+        <span className="text-sm font-bold text-slate-500 uppercase">BLUEPRINT INDEX</span>
         <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="p-2 border border-slate-400 bg-white">
           {isMobileMenuOpen ? <X className="w-6 h-6 text-slate-800" /> : <Menu className="w-6 h-6 text-slate-800" />}
         </button>

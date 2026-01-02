@@ -242,8 +242,25 @@ export const PROJECTS: Project[] = [
             { label: "Dynamic DOM Render", type: "output" }
         ]
     }
+  },
+ {
+    id: "PRJ-04",
+    title: "GuardianAI",
+    techStack: ["React", "TypeScript", "Google Gemini API", "Tailwind CSS"],
+    description: "An AI-powered personal safety ecosystem providing real-time threat mitigation and emergency protocols for women.",
+    fullDescription: "GuardianAI is a mission-critical safety application that bridges the gap between passive information and active protection. It features a context-aware Security Agent powered by Gemini 2.5 Flash for instant advice, an automated SOS broadcasting system with live GPS tracking, and social engineering tools like a Fake Call simulator. The architecture focuses on high reliability and low-latency response, utilizing robust offline data persistence for critical legal guides and emergency contacts in low-connectivity environments.",
+    role: "Lead Software Engineer",
+    architecture: {
+        flow: [
+            { label: "User Intent / Crisis Input", type: "input" },
+            { label: "Gemini Safety Engine (LLM)", type: "process" },
+            { label: "Native API Bridge (GPS/Audio/Vibration)", type: "process" },
+            { label: "Emergency Broadcast & De-escalation", type: "output" }
+        ]
+    }
   }
 ];
+
 
 export const EXPERIENCE: ExperienceItem[] = [
     {

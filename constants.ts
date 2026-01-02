@@ -254,7 +254,7 @@ export const PROJECTS: Project[] = [
         flow: [
             { label: "User Intent / Crisis Input", type: "input" },
             { label: "Gemini Safety Engine (LLM)", type: "process" },
-            { label: "Native API Bridge (GPS/Audio/Vibration)", type: "process" },
+            { label: "Native API Bridge (GPS/Audio)", type: "process" },
             { label: "Emergency Broadcast & De-escalation", type: "output" }
         ]
     }

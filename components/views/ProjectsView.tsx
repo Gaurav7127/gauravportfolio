@@ -47,11 +47,12 @@ const ProjectsView: React.FC = () => {
                     {project.architecture.flow.map((node, i) => (
                         <React.Fragment key={i}>
                             <div className={`
-                                flex flex-col items-center justify-center w-16 h-16 p-1 text-center border shadow-sm bg-white transition-transform group-hover:scale-105
-                                ${node.type === 'process' ? 'border-blue-500 bg-blue-50/50' : 'border-slate-400'}
-                                ${node.type === 'output' ? 'border-slate-800 bg-slate-800 text-slate-200' : 'text-slate-700'}
+                                flex flex-col items-center justify-center w-16 h-16 p-1 text-center border shadow-sm transition-transform group-hover:scale-105
+                                ${node.type === 'process' ? 'border-blue-500 bg-blue-50/50 text-blue-800' : ''}
+                                ${node.type === 'output' ? 'border-slate-800 bg-slate-800 text-slate-100' : ''}
+                                ${node.type !== 'process' && node.type !== 'output' ? 'bg-white border-slate-400 text-slate-700' : ''}
                             `}>
-                                <div className={`scale-75 mb-1 ${node.type === 'output' ? 'text-slate-300' : 'text-slate-600'}`}>
+                                <div className={`scale-75 mb-1 ${node.type === 'output' ? 'text-slate-300' : 'text-slate-500'}`}>
                                     {getIconForType(node.type)}
                                 </div>
                                 <span className="text-[7px] font-bold uppercase leading-tight line-clamp-2">{node.label}</span>
@@ -137,19 +138,19 @@ const ProjectsView: React.FC = () => {
                                     {/* Node */}
                                     <div className={`
                                         relative z-10 flex flex-col items-center justify-center w-32 h-32 p-4 text-center border-2 transition-all duration-300 group/node
-                                        ${node.type === 'input' ? 'bg-white border-slate-600 rounded-lg' : ''}
-                                        ${node.type === 'process' ? 'bg-blue-50 border-blue-600 rounded-md' : ''}
-                                        ${node.type === 'storage' ? 'bg-amber-50 border-amber-600 rounded-xl' : ''}
+                                        ${node.type === 'input' ? 'bg-white border-slate-600 rounded-lg text-slate-800' : ''}
+                                        ${node.type === 'process' ? 'bg-blue-50 border-blue-600 rounded-md text-blue-900' : ''}
+                                        ${node.type === 'storage' ? 'bg-amber-50 border-amber-600 rounded-xl text-amber-900' : ''}
                                         ${node.type === 'output' ? 'bg-slate-800 text-white border-slate-800 rounded-sm' : ''}
                                         hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)] hover:-translate-y-1 hover:scale-105
                                     `}>
-                                        <div className={`mb-2 p-2 rounded-full border ${node.type === 'output' ? 'border-slate-600 bg-slate-700 text-slate-200' : 'border-slate-200 bg-white text-slate-600'} group-hover/node:scale-110 transition-transform`}>
+                                        <div className={`mb-2 p-2 rounded-full border ${node.type === 'output' ? 'border-slate-600 bg-slate-700 text-slate-100' : 'border-slate-200 bg-white text-slate-600'} group-hover/node:scale-110 transition-transform`}>
                                             {getIconForType(node.type, "w-6 h-6")}
                                         </div>
                                         <span className="text-[10px] font-bold uppercase leading-tight tracking-wide">{node.label}</span>
                                         
                                         {/* Hover Tooltip */}
-                                        <div className="absolute -bottom-8 opacity-0 group-hover/node:opacity-100 transition-opacity text-[9px] font-mono bg-slate-900 text-white px-2 py-1 rounded">
+                                        <div className="absolute -bottom-8 opacity-0 group-hover/node:opacity-100 transition-opacity text-[9px] font-mono bg-slate-900 text-white px-2 py-1 rounded z-50 pointer-events-none shadow-lg border border-slate-700">
                                             {node.type.toUpperCase()} UNIT
                                         </div>
                                     </div>

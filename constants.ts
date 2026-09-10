@@ -41,6 +41,14 @@ export const SKILLS: Skill[] = [
 ];
 
 export const EDUCATION: EducationItem[] = [
+   {
+    id: "EDU-04",
+    degree: "M.Sc. in Artificial Intelligence",
+    institution: "KBP University",
+    year: "2026 - 2028",
+    score: "CGPA: 00.00 / 10",
+    details: "Relevant Coursework: Data Structures & Algorithms, Programming Languages, DBMS, AI Fundamentals."
+  },
   {
     id: "EDU-03",
     degree: "B.Sc. in Artificial Intelligence",
@@ -65,6 +73,7 @@ export const EDUCATION: EducationItem[] = [
     score: "87%",
     details: "Foundation"
   }
+  
 ];
 
 export const CERTIFICATIONS: CertificationItem[] = [

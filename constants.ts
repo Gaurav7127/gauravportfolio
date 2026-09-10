@@ -23,6 +23,7 @@ export const SKILLS: Skill[] = [
   { name: "C", iconClass: "devicon-c-plain colored", level: 70, category: "Languages" },
   { name: "C++", iconClass: "devicon-cplusplus-plain colored", level: 75, category: "Languages" },
   { name: "JavaScript", iconClass: "devicon-javascript-plain colored", level: 85, category: "Languages" },
+  { name: "TypeScript", iconClass: "devicon-typescript-plain colored", level: 70, category: "Languages" },
   
   // Web
   { name: "React", iconClass: "devicon-react-original colored", level: 90, category: "Web" },

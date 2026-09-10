@@ -7,7 +7,7 @@ export const PERSONAL_INFO: PersonalInfo = {
   email: "gauravsingh1752005@gmail.com",
   phone: "+91 8530042162",
   bio: "Passionate Full Stack and AI Engineer specializing in building robust digital solutions. With a strong foundation in Artificial Intelligence and modern web technologies, I transform complex requirements into precise technical executables. Proficient in Python, React, and Machine Learning pipelines.",
-  resume: "/Gaurav_Singh__Resume.pdf.pdf", 
+  resume: "/Gaurav_Singh__Resume.pdf", 
   profileImage: "/profilepic.png",
   socials: {
       linkedin: "https://www.linkedin.com/in/gauravsingh175",

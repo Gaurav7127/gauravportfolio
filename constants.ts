@@ -30,6 +30,7 @@ export const SKILLS: Skill[] = [
   { name: "CSS3", iconClass: "devicon-css3-plain colored", level: 90, category: "Web" },
   { name: "Flask", iconClass: "devicon-flask-original", level: 80, category: "Web" },
   { name: "Streamlit", iconClass: "devicon-streamlit-plain colored", level: 85, category: "Web" },
+  { name: "Django", iconClass: "devicon-django-plain colored", level: 85, category: "Web" },
   
   // Tools
   { name: "GitHub", iconClass: "devicon-github-original", level: 90, category: "Tools" },

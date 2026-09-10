@@ -35,7 +35,7 @@ const Header: React.FC<HeaderProps> = ({ theme = 'blue', onThemeChange }) => {
             </h1>
             <div className="text-xs font-mono text-slate-500 mt-1 uppercase tracking-widest flex justify-between">
                 <span>{PERSONAL_INFO.role}</span>
-                <span className="text-blue-600 font-bold ml-4">V.2025</span>
+                <span className="text-blue-600 font-bold ml-4">V.2026</span>
             </div>
         </div>
       </div>

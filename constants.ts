@@ -47,7 +47,7 @@ export const EDUCATION: EducationItem[] = [
     institution: "KBP University",
     year: "2026 - 2028",
     score: "CGPA: 00.00 / 10",
-    details: "Relevant Coursework: Data Structures & Algorithms, Programming Languages, DBMS, AI Fundamentals."
+    details: "Relevant Coursework: Cloud Computing, Data Mining, Algorithms"
   },
   {
     id: "EDU-03",
